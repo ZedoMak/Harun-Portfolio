@@ -54,8 +54,8 @@ export function About() {
         </FadeInUp>
 
         {/* Skills Showcase */}
-        <div className="mb-16">
-          <h3 className="text-2xl text-center mb-12">Skills & Expertise</h3>
+        <div className="mb-12 sm:mb-16">
+          <h3 className="text-xl sm:text-2xl text-center mb-8 sm:mb-12">Skills & Expertise</h3>
           <SkillsShowcase />
         </div>
 

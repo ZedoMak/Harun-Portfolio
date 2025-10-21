@@ -582,6 +582,13 @@ html {
     overflow: hidden;
   }
 
+  /* Custom xs breakpoint for extra small screens */
+  @media (min-width: 475px) {
+    .xs\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
   /* Masonry grid responsive breakpoints */
   .masonry-grid {
     margin: 0 auto;
