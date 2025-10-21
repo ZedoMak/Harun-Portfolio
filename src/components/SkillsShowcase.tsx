@@ -82,7 +82,7 @@ export function SkillsShowcase() {
     <FadeInUp>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3 sm:gap-4 md:gap-6">
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <div
               key={skill.name}
               className="group relative"
