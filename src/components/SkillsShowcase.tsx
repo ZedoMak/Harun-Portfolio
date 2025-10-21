@@ -80,30 +80,23 @@ export function SkillsShowcase() {
 
   return (
     <FadeInUp>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3 sm:gap-4 md:gap-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-4 xs:grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-4 sm:gap-6 md:gap-8">
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="group relative"
+              className="group relative flex flex-col items-center"
             >
-              <div className="w-full aspect-square bg-card hover:bg-teal-500/10 dark:hover:bg-teal-400/20 border border-teal-200/50 dark:border-teal-400/30 rounded-lg sm:rounded-xl flex items-center justify-center shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 hover:border-teal-500 dark:hover:border-teal-400 touch-manipulation">
-                <div className="text-teal-600 dark:text-teal-400 group-hover:text-teal-700 dark:group-hover:text-teal-300 transition-colors duration-300 scale-90 sm:scale-100">
+              {/* Logo */}
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 touch-manipulation">
+                <div className="text-teal-600 dark:text-teal-400 group-hover:text-teal-700 dark:group-hover:text-teal-300 transition-colors duration-300">
                   {skill.icon}
                 </div>
               </div>
               
-              {/* Tooltip - Hidden on mobile, shown on hover for desktop */}
-              <div className="hidden sm:block absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
-                <div className="bg-background/95 backdrop-blur-sm text-foreground px-3 py-1 rounded-md shadow-lg border border-border text-sm whitespace-nowrap">
-                  {skill.name}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-background/95"></div>
-                </div>
-              </div>
-              
-              {/* Mobile skill name - visible on mobile devices */}
-              <div className="block sm:hidden mt-2 text-center">
-                <span className="text-xs text-muted-foreground leading-tight block">
+              {/* Skill name */}
+              <div className="mt-2 text-center">
+                <span className="text-xs sm:text-sm text-muted-foreground leading-tight block group-hover:text-foreground transition-colors duration-300">
                   {skill.name}
                 </span>
               </div>
@@ -111,8 +104,8 @@ export function SkillsShowcase() {
           ))}
         </div>
         
-        {/* Mobile-friendly description */}
-        <div className="mt-6 sm:mt-8 text-center">
+        {/* Description */}
+        <div className="mt-8 sm:mt-10 text-center">
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Professional tools and design expertise for creating compelling visual solutions
           </p>
