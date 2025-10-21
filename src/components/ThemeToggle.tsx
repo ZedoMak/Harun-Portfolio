@@ -11,7 +11,7 @@ import {
 type Theme = "light" | "dark" | "system";
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("system");
+  const [theme, setTheme] = useState<Theme>("light");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export function ThemeToggle() {
     if (!mounted) return;
 
     const root = window.document.documentElement;
-    root.classList.remove("light", "dark");
+    root.classList.remove("system", "dark");
 
     if (theme === "system") {
       const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
