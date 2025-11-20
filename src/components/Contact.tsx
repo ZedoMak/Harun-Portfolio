@@ -102,7 +102,7 @@ export function Contact() {
     {
       icon: <MessageCircle className="w-5 h-5" />,
       label: "Telegram",
-      href: "https://t.me/@Noveltei",
+      href: "tg://resolve?domain=Noveltei",
       color: "hover:text-blue-600 dark:hover:text-gray-400",
     },
   ];
