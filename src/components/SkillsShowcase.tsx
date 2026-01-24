@@ -62,12 +62,20 @@ const AfterEffectsLogo = () => (
   </div>
 );
 
+// Adobe Premiere Pro Logo Component
+const PremiereLogo = () => (
+  <div className="w-6 h-6 bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-sm flex items-center justify-center shadow-sm">
+    <span className="text-white text-xs font-bold">Pr</span>
+  </div>
+);
+
 export function SkillsShowcase() {
   const skills = [
     { icon: <PhotoshopLogo />, name: "Adobe Photoshop" },
     { icon: <IllustratorLogo />, name: "Adobe Illustrator" },
     { icon: <InDesignLogo />, name: "Adobe InDesign" },
     { icon: <AfterEffectsLogo />, name: "Adobe After Effects" },
+    { icon: <PremiereLogo />, name: "Adobe Premiere Pro" },
     { icon: <FigmaLogo />, name: "Figma" },
     { icon: <CanvaLogo />, name: "Canva" },
     { icon: <CorelDrawLogo />, name: "CorelDRAW" },

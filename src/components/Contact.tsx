@@ -15,6 +15,7 @@ import {
   MessageCircle,
   Send,
   CheckCircle,
+  Music2,
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -29,17 +30,28 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitted(true);
-      toast.success(
-        "Message sent successfully! I'll get back to you soon.",
-      );
-      setFormData({ name: "", email: "", message: "" });
+    const to = "harun@gmail.com";
+    const subject = `New project inquiry from ${formData.name}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      "",
+      "Message:",
+      formData.message,
+    ].join("\n");
 
-      // Reset success state after 3 seconds
-      setTimeout(() => setIsSubmitted(false), 3000);
-    }, 1000);
+    const mailto = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailto;
+
+    setIsSubmitted(true);
+    toast.success("Opening your email app. Thanks for reaching out!");
+    setFormData({ name: "", email: "", message: "" });
+
+    // Reset success state after 3 seconds
+    setTimeout(() => setIsSubmitted(false), 3000);
   };
 
   const handleChange = (
@@ -58,7 +70,7 @@ export function Contact() {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
       value: "harun@gmail.com",
-      href: "mailto:harun@email.com",
+      href: "mailto:harun@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,
@@ -70,40 +82,46 @@ export function Contact() {
       icon: <MapPin className="w-5 h-5" />,
       label: "Location",
       value: "Oromia, Bale Robe",
-      href: "#",
+      href: "https://maps.google.com/?q=Oromia+Bale+Robe",
     },
   ];
 
   const socialLinks = [
     {
       icon: <Twitter className="w-5 h-5" />,
-      label: "Twitter",
-      href: "https://twitter.com",
+      label: "X / Twitter",
+      href: "https://twitter.com/your_username",
       color: "hover:text-blue-400",
     },
     {
       icon: <Instagram className="w-5 h-5" />,
       label: "Instagram",
-      href: "https://instagram.com",
+      href: "https://instagram.com/your_username",
       color: "hover:text-pink-400",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/your_username",
       color: "hover:text-blue-600",
     },
-    {
-      icon: <Github className="w-5 h-5" />,
-      label: "GitHub",
-      href: "https://github.com",
-      color: "hover:text-gray-600 dark:hover:text-gray-400",
-    },
+    // {
+    //   icon: <Github className="w-5 h-5" />,
+    //   label: "GitHub",
+    //   href: "https://github.com",
+    //   color: "hover:text-gray-600 dark:hover:text-gray-400",
+    // },
     {
       icon: <MessageCircle className="w-5 h-5" />,
       label: "Telegram",
-      href: "tg://resolve?domain=Noveltei",
+      href: "https://t.me/Noveltei",
       color: "hover:text-blue-600 dark:hover:text-gray-400",
+    },
+    {
+      icon: <Music2 className="w-5 h-5" />,
+      label: "TikTok",
+      href: "https://www.tiktok.com/@your_username",
+      color: "hover:text-purple-400",
     },
   ];
 

@@ -4,6 +4,30 @@ import { InfiniteScrollGallery, type GalleryItem } from './InfiniteScrollGallery
 import { ProjectLightbox } from './ProjectLightbox';
 import { FloatingElements } from './animations/FloatingElements';
 import { FadeInUp } from './animations/ScrollAnimations';
+// ... existing imports ...
+import infoTechTshirt from '@/assets/images/info-tech-tshirt.jpg';
+import abdiBrandCollection from '@/assets/images/abdi-brand-fashion-collectio.jpg';
+import abdiBrandShoppingBag from '@/assets/images/abdi-brand-shopping-bag.jpg';
+import hrDesignMugs from '@/assets/images/hr-design-mugs.jpg';
+
+import amezingMenu from '@/assets/images/amezing-restaurant-menu.jpg';
+import drinksMenu from '@/assets/images/drinks-menu.jpg';
+import summerCoffeeMenu from '@/assets/images/summer-coffee-menu.jpg';
+import obaaCoffeeShop from '@/assets/images/obaa-coffee-shop.jpg';
+
+import aliyyiBarberBanner from '@/assets/images/aliyyi-barber-shop-banner.jpg';
+import infoTechGraphicsClass from '@/assets/images/info-tech-graphics-class.jpg';
+import manduCollectionPoster from '@/assets/images/mandu-collection-poster.jpg';
+import newShoesCollection from '@/assets/images/new-shoes-collection.jpg';
+import happyCoffee from '@/assets/images/happy-coffee.jpg';
+import abdiBrandPromotional from '@/assets/images/abdi-brand-promotional.jpg';
+
+import abdiBrandLogo from '@/assets/images/abdi-brand-fashion-logo.jpg';
+import abdiAdvertLogo from '@/assets/images/abdi-advert-logo.jpg';
+import hrDesignLogo from '@/assets/images/hr-design-logo.jpg';
+import baleArsiLogo from '@/assets/images/ale-arsi-agri-logo.jpg';
+import summerCoffeeLogo from '@/assets/images/summer-coffee-logo.jpg';
+import hrDesignToteBag from '@/assets/images/hr-design-tote-bag.jpg';
 
 interface Project {
   id: number;
@@ -28,222 +52,329 @@ export function CinematicPortfolio() {
     // Clothing Graphics Section
     {
       id: 1,
-      title: "Custom T-Shirt Design",
+      title: "INFO-TECH T-Shirt Design",
       category: "Clothing Graphics",
       type: "clothing",
-      description: "Eye-catching t-shirt graphics that blend creativity with modern aesthetics.",
-      detailedDescription: "Custom t-shirt designs featuring bold graphics, typography, and illustrations. Each design is crafted to be print-ready with consideration for fabric type, color schemes, and target audience preferences.",
-      image: "https://images.unsplash.com/photo-1618677603544-51162346e165?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0LXNoaXJ0JTIwZGVzaWduJTIwbW9ja3VwfGVufDF8fHx8MTc1ODk2NTc2NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["T-Shirt Design", "Apparel Graphics", "Screen Printing", "Fashion"],
-      client: "Urban Style Co.",
+      description: "Professional t-shirt design for a computer training institution.",
+      detailedDescription:
+        "Custom t-shirt design featuring INFO-TECH branding with clear, readable typography suitable for staff and students.",
+      image: infoTechTshirt,
+      tags: ["T-Shirt Design", "Apparel Graphics", "Institutional Branding"],
+      client: "INFO-TECH Computer Training",
       year: "2024",
       link: "#",
-      aspectRatio: "square"
+      aspectRatio: "square",
     },
     {
       id: 2,
-      title: "Premium Hoodie Graphics",
+      title: "ABDI BRAND Fashion Collection",
       category: "Clothing Graphics",
       type: "clothing",
-      description: "Sophisticated hoodie designs for lifestyle and streetwear brands.",
-      detailedDescription: "High-quality hoodie graphics that combine contemporary design trends with brand identity. Features include embroidered logos, printed graphics, and color-coordinated designs perfect for modern streetwear.",
-      image: "https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob29kaWUlMjBkZXNpZ24lMjBhcHBhcmVsfGVufDF8fHx8MTc1ODk2Njg0OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Hoodie Design", "Streetwear", "Embroidery", "Urban Fashion"],
-      client: "Street Culture Brand",
+      description: "Fashion collection banner showing shoes, clothes and accessories.",
+      detailedDescription:
+        "Promotional layout for ABDI BRAND Fashion, combining multiple product shots into one cohesive composition.",
+      image: abdiBrandCollection,
+      tags: ["Fashion Design", "Banner", "Social Media"],
+      client: "ABDI BRAND Fashion",
       year: "2024",
       link: "#",
-      aspectRatio: "portrait"
+      aspectRatio: "landscape",
     },
     {
       id: 3,
       title: "Sports Jersey Design",
       category: "Clothing Graphics",
       type: "clothing",
-      description: "Professional sports jersey designs with team branding and player customization.",
-      detailedDescription: "Complete sports jersey design system including team logos, number styling, sponsor placements, and color variations. Designed for performance wear with consideration for fabric stretch and durability.",
-      image: "https://images.unsplash.com/photo-1736485956195-9cb4d5d997dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBqZXJzZXklMjBkZXNpZ258ZW58MXx8fHwxNzU4OTY1Nzg2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Sports Jersey", "Team Branding", "Athletic Wear", "Custom Numbers"],
+      description: "Professional sports jersey design with team branding.",
+      detailedDescription:
+        "Custom jersey layout designed to work on athletic fabric, with clear numbers and sponsor areas.",
+      image:
+        "https://images.unsplash.com/photo-1736485956195-9cb4d5d997dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      tags: ["Sports Jersey", "Team Branding"],
       client: "City Sports League",
       year: "2024",
       link: "#",
-      aspectRatio: "portrait"
+      aspectRatio: "portrait",
     },
     {
       id: 4,
-      title: "Custom Mug Designs",
+      title: "HR.DESIGN Branded Mugs",
       category: "Product Graphics",
       type: "packaging",
-      description: "Personalized mug graphics for gifts, corporate branding, and special occasions.",
-      detailedDescription: "Creative mug designs ranging from corporate branding to personalized gifts. Each design considers print limitations, durability, and visual impact when displayed or in use.",
-      image: "https://images.unsplash.com/photo-1614833193447-427b75eee2f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdWclMjBkZXNpZ24lMjBwcmludGluZ3xlbnwxfHx8fDE3NTg5NjY4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Mug Design", "Product Graphics", "Corporate Gifts", "Personalization"],
-      client: "Coffee Culture Co.",
+      description: "Corporate mugs with HR.DESIGN logo for branding and giveaways.",
+      detailedDescription:
+        "Clean mug design that applies the HR.DESIGN mark on a bold, colored surface for maximum visibility.",
+      image: hrDesignMugs,
+      tags: ["Mug Design", "Merchandise", "Branding"],
+      client: "HR.DESIGN",
       year: "2024",
       link: "#",
-      aspectRatio: "square"
+      aspectRatio: "square",
     },
 
     // Menu Design Section
     {
       id: 5,
-      title: "Restaurant Menu Design",
+      title: "Amezing Restaurant Menu",
       category: "Menu Design",
       type: "menu",
-      description: "Elegant restaurant menu layouts that enhance dining experience and brand identity.",
-      detailedDescription: "Comprehensive menu design that balances visual appeal with functionality. Includes careful typography hierarchy, appetizing food photography, and organized layout that guides customer choices while reflecting restaurant ambiance.",
-      image: "https://images.unsplash.com/photo-1575394331472-128c15dd26c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwbWVudSUyMGRlc2lnbnxlbnwxfHx8fDE3NTg5NjY4NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Restaurant Menu", "Food Photography", "Typography", "Layout Design"],
-      client: "Fine Dining Restaurant",
+      description: "Full food menu with burgers, sandwiches and pizza.",
+      detailedDescription:
+        "Restaurant menu layout balancing appetizing food photos, prices, and clear typographic hierarchy.",
+      image: amezingMenu,
+      tags: ["Restaurant Menu", "Print Design"],
+      client: "Amezing Restaurant",
       year: "2024",
       link: "#",
-      aspectRatio: "portrait"
+      aspectRatio: "portrait",
     },
     {
       id: 6,
-      title: "Cafe Menu Layout",
+      title: "Drinks Menu",
       category: "Menu Design",
       type: "menu",
-      description: "Modern cafe menu design with focus on beverages and light food options.",
-      detailedDescription: "Trendy cafe menu featuring specialty coffee drinks, pastries, and light meals. Design incorporates warm colors, inviting typography, and clear price visibility to create a welcoming atmosphere.",
-      image: "https://images.unsplash.com/photo-1684595011788-d7ac732cd6e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWZlJTIwbWVudSUyMGxheW91dHxlbnwxfHx8fDE3NTg5NjY4NTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Cafe Menu", "Coffee Shop", "Beverage Design", "Modern Layout"],
-      client: "Artisan Coffee House",
+      description: "Colorful drinks and water menu with illustrated beverages.",
+      detailedDescription:
+        "Vertical drink list organized by category, using bright colors and cocktail illustrations.",
+      image: drinksMenu,
+      tags: ["Drinks Menu", "Bar Menu"],
+      client: "Cafe / Restaurant",
       year: "2024",
       link: "#",
-      aspectRatio: "landscape"
+      aspectRatio: "portrait",
+    },
+    {
+      id: 7,
+      title: "Summer Coffee Menu Poster",
+      category: "Menu Design",
+      type: "menu",
+      description: "Coffee-themed poster and menu for a cafe brand.",
+      detailedDescription:
+        "Poster-style menu featuring branded takeaway cups, coffee beans and decorative illustrations.",
+      image: summerCoffeeMenu,
+      tags: ["Coffee Menu", "Cafe Branding"],
+      client: "Summer Coffee",
+      year: "2024",
+      link: "#",
+      aspectRatio: "portrait",
+    },
+    {
+      id: 8,
+      title: "OBAA Coffee Shop Menu",
+      category: "Menu Design",
+      type: "menu",
+      description: "Menu and packaging mockup for a coffee shop.",
+      detailedDescription:
+        "Horizontal layout combining coffee cup, bag packaging and brand elements with ordering information.",
+      image: obaaCoffeeShop,
+      tags: ["Coffee Shop", "Menu & Packaging"],
+      client: "OBAA Coffee Shop",
+      year: "2024",
+      link: "#",
+      aspectRatio: "landscape",
     },
 
     // Advertisement & Marketing Section
     {
-      id: 7,
-      title: "Digital Advertisement Banner",
-      category: "Advertisement",
-      type: "advertising",
-      description: "High-impact digital banners for social media and web advertising campaigns.",
-      detailedDescription: "Dynamic advertisement banners designed for digital platforms including Facebook, Instagram, Google Ads, and website banners. Features compelling visuals, clear call-to-action, and brand-consistent messaging.",
-      image: "https://images.unsplash.com/photo-1612810806695-30f7a8258391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZHZlcnRpc2VtZW50JTIwYmFubmVyJTIwZGVzaWdufGVufDF8fHx8MTc1ODk2Njg1MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Digital Banners", "Social Media Ads", "Web Marketing", "Campaign Design"],
-      client: "Digital Marketing Agency",
-      year: "2024",
-      link: "#",
-      aspectRatio: "landscape"
-    },
-    {
-      id: 8,
-      title: "Wedding Invitation & Flyer",
-      category: "Advertisement",
-      type: "advertising",
-      description: "Elegant wedding invitations and promotional flyers for special events.",
-      detailedDescription: "Beautiful wedding invitation suites and event flyers that capture the romance and significance of special occasions. Includes save-the-dates, ceremony cards, and reception details with cohesive design elements.",
-      image: "https://images.unsplash.com/photo-1633051567046-844064059c53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwZmx5ZXIlMjBkZXNpZ258ZW58MXx8fHwxNzU4OTY2ODUwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Wedding Invitations", "Event Flyers", "Elegant Design", "Print Materials"],
-      client: "Wedding Planners Elite",
-      year: "2024",
-      link: "#",
-      aspectRatio: "portrait"
-    },
-    {
       id: 9,
-      title: "Birthday Celebration Invites",
+      title: "ALIYYI Barber Shop Banner",
       category: "Advertisement",
       type: "advertising",
-      description: "Fun and vibrant birthday invitation designs for all ages and themes.",
-      detailedDescription: "Creative birthday invitation designs ranging from children's parties to milestone celebrations. Each design captures the joy and excitement of the occasion with personalized elements and party themes.",
-      image: "https://images.unsplash.com/photo-1739909198159-a834175bd911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJ0aGRheSUyMGludml0YXRpb24lMjBkZXNpZ258ZW58MXx8fHwxNzU4OTY2ODU1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Birthday Invitations", "Party Design", "Celebration Graphics", "Custom Themes"],
-      client: "Party Perfect Events",
+      description: "Wide banner showcasing barber services and phone numbers.",
+      detailedDescription:
+        "Multi-image service strip with bold title and call-to-action for barbershop promotion.",
+      image: aliyyiBarberBanner,
+      tags: ["Banner", "Barber Shop", "Outdoor Ad"],
+      client: "ALIYYI Barber Shop",
       year: "2024",
       link: "#",
-      aspectRatio: "square"
+      aspectRatio: "landscape",
     },
     {
       id: 10,
-      title: "Promotional Poster Design",
+      title: "INFO-TECH Graphics Class Poster",
       category: "Advertisement",
       type: "advertising",
-      description: "Eye-catching posters for events, products, and brand promotions.",
-      detailedDescription: "Dynamic poster designs that grab attention and communicate key messages effectively. Perfect for concerts, product launches, sales events, and brand awareness campaigns with bold visuals and clear messaging.",
-      image: "https://images.unsplash.com/photo-1621974714993-465ae51a4483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3N0ZXIlMjBkZXNpZ24lMjBncmFwaGljfGVufDF8fHx8MTc1ODk2Njg1N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Poster Design", "Event Promotion", "Brand Marketing", "Visual Communication"],
-      client: "Event Marketing Co.",
+      description: "Course promotion poster for graphics design training.",
+      detailedDescription:
+        "Poster listing course modules (logo, card, banner, etc.) with instructor image and software icons.",
+      image: infoTechGraphicsClass,
+      tags: ["Course Poster", "Education", "Social Media"],
+      client: "INFO-TECH Computer",
       year: "2024",
       link: "#",
-      aspectRatio: "portrait"
+      aspectRatio: "portrait",
+    },
+    {
+      id: 11,
+      title: "Mandu Collection Poster",
+      category: "Advertisement",
+      type: "advertising",
+      description: "Fashion promotion featuring sandals, bags and clothing.",
+      detailedDescription:
+        "Red themed fashion poster with multiple product frames arranged in a dynamic collage.",
+      image: manduCollectionPoster,
+      tags: ["Fashion Poster", "Collection Launch"],
+      client: "Mandu Collection",
+      year: "2024",
+      link: "#",
+      aspectRatio: "portrait",
+    },
+    {
+      id: 12,
+      title: "New Shoes Collection Ad",
+      category: "Advertisement",
+      type: "advertising",
+      description: "High-impact shoe ad with 30% off badge.",
+      detailedDescription:
+        "Vertical social media creative featuring a single hero sneaker with bold typography and discount highlight.",
+      image: newShoesCollection,
+      tags: ["Shoes", "Social Media Ad"],
+      client: "Fashion Brand",
+      year: "2024",
+      link: "#",
+      aspectRatio: "portrait",
+    },
+    {
+      id: 13,
+      title: "Happy Coffee Social Post",
+      category: "Advertisement",
+      type: "advertising",
+      description: "Coffee social media artwork with bean background.",
+      detailedDescription:
+        "Square-format artwork combining top-view coffee cup, bean pattern and playful typography.",
+      image: happyCoffee,
+      tags: ["Coffee", "Social Media", "Digital"],
+      client: "Happy Coffee",
+      year: "2024",
+      link: "#",
+      aspectRatio: "square",
+    },
+    {
+      id: 14,
+      title: "ABDI BRAND Promotional Layout",
+      category: "Advertisement",
+      type: "advertising",
+      description: "Full promotional layout for ABDI BRAND Fashion store.",
+      detailedDescription:
+        "Composite design showing perfume, belts, watches and clothing alongside logo and contact details.",
+      image: abdiBrandPromotional,
+      tags: ["Retail Promotion", "Fashion", "Flyer"],
+      client: "ABDI BRAND Fashion",
+      year: "2024",
+      link: "#",
+      aspectRatio: "square",
     },
 
     // Branding & Identity Section
     {
-      id: 11,
-      title: "Brand Logo Design",
+      id: 15,
+      title: "ABDI BRAND Fashion Logo",
       category: "Branding",
       type: "branding",
-      description: "Memorable logo designs that capture brand essence and market positioning.",
-      detailedDescription: "Complete logo design process from concept to final execution. Includes brand research, competitor analysis, multiple concept explorations, and final logo applications across various media formats.",
-      image: "https://images.unsplash.com/photo-1757283491661-deaef4a1c438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZCUyMGxvZ28lMjBkZXNpZ258ZW58MXx8fHwxNzU4OTY2ODU2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Logo Design", "Brand Identity", "Corporate Branding", "Visual Identity"],
-      client: "Tech Startup Inc.",
+      description: "Primary logo for a fashion brand.",
+      detailedDescription:
+        "Monogram-style logo with golden gradient and ornamental details used across fashion materials.",
+      image: abdiBrandLogo,
+      tags: ["Logo", "Fashion", "Brand Identity"],
+      client: "ABDI BRAND Fashion",
       year: "2024",
       link: "#",
-      aspectRatio: "square"
+      aspectRatio: "square",
     },
     {
-      id: 12,
-      title: "Business Card Design",
+      id: 16,
+      title: "ABDI ADVERT Logo",
       category: "Branding",
       type: "branding",
-      description: "Professional business cards that make lasting first impressions.",
-      detailedDescription: "Sophisticated business card designs that reflect professionalism and brand identity. Includes various finish options, typography treatments, and layout variations to suit different business needs.",
-      image: "https://images.unsplash.com/photo-1718670013921-2f144aba173a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGNhcmQlMjBkZXNpZ258ZW58MXx8fHwxNzU4ODczNDc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Business Cards", "Professional Design", "Corporate Identity", "Print Design"],
-      client: "Professional Services",
+      description: "Logo for an advertising and media company.",
+      detailedDescription:
+        "Letter A combined with a microphone symbol, designed with 3D golden style for strong presence.",
+      image: abdiAdvertLogo,
+      tags: ["Logo", "Media", "Advertising"],
+      client: "ABDI ADVERT",
       year: "2024",
       link: "#",
-      aspectRatio: "landscape"
+      aspectRatio: "square",
     },
     {
-      id: 13,
-      title: "Social Media Graphics",
+      id: 17,
+      title: "HR.DESIGN Logo",
       category: "Branding",
       type: "branding",
-      description: "Cohesive social media designs that strengthen brand presence across platforms.",
-      detailedDescription: "Complete social media design package including post templates, story designs, cover photos, and profile graphics. Ensures consistent brand messaging across Facebook, Instagram, Twitter, and LinkedIn.",
-      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGRlc2lnbnxlbnwxfHx8fDE3NTg4NzMwNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Social Media", "Digital Marketing", "Brand Consistency", "Content Design"],
-      client: "Social Media Agency",
+      description: "Minimal logo for a design studio.",
+      detailedDescription:
+        "Pen-nib based mark representing creativity and design, used on signage, mugs and tote bags.",
+      image: hrDesignLogo,
+      tags: ["Logo", "Studio", "Branding"],
+      client: "HR.DESIGN",
       year: "2024",
       link: "#",
-      aspectRatio: "square"
+      aspectRatio: "square",
+    },
+    {
+      id: 18,
+      title: "BALE & ARSI Agri Input Supplier Logo",
+      category: "Branding",
+      type: "branding",
+      description: "Agricultural company logo with plant and gear motif.",
+      detailedDescription:
+        "Circular logo merging crop fields, leaves and gear teeth to communicate both farming and technology.",
+      image: baleArsiLogo,
+      tags: ["Logo", "Agriculture"],
+      client: "BALE & ARSI Agri Inputs Supplier",
+      year: "2024",
+      link: "#",
+      aspectRatio: "square",
+    },
+    {
+      id: 19,
+      title: "Summer Coffee Logo",
+      category: "Branding",
+      type: "branding",
+      description: "Round black and white logo for a coffee shop.",
+      detailedDescription:
+        "Badge-style logo with cup, beans and slogan ‘Good Coffee Good Mood’, suitable for stamps and packaging.",
+      image: summerCoffeeLogo,
+      tags: ["Logo", "Coffee Shop"],
+      client: "Summer Coffee",
+      year: "2024",
+      link: "#",
+      aspectRatio: "square",
     },
 
     // Packaging & Product Graphics
     {
-      id: 14,
-      title: "Product Packaging Design",
+      id: 20,
+      title: "ABDI BRAND Shopping Bag",
       category: "Packaging",
       type: "packaging",
-      description: "Innovative packaging designs that protect products and attract customers.",
-      detailedDescription: "Complete packaging design solutions from concept to production-ready files. Includes structural design, graphics application, material considerations, and sustainability factors for retail success.",
-      image: "https://images.unsplash.com/photo-1626253934161-08cfea22e968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwcGFja2FnaW5nJTIwZGVzaWdufGVufDF8fHx8MTc1ODk2Njg1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Packaging Design", "Product Graphics", "Retail Design", "Brand Application"],
-      client: "Consumer Goods Co.",
+      description: "Shopping bag mockup featuring AbdI Brand Fashion logo.",
+      detailedDescription:
+        "Minimal white bag with gold logo and handle, showing how the identity works on physical packaging.",
+      image: abdiBrandShoppingBag,
+      tags: ["Packaging", "Shopping Bag", "Retail"],
+      client: "ABDI BRAND Fashion",
       year: "2024",
       link: "#",
-      aspectRatio: "portrait"
+      aspectRatio: "portrait",
     },
     {
-      id: 15,
-      title: "Product Packaging Design",
+      id: 21,
+      title: "HR.DESIGN Tote Bag",
       category: "Packaging",
       type: "packaging",
-      description: "Innovative packaging designs that protect products and attract customers.",
-      detailedDescription: "Complete packaging design solutions from concept to production-ready files. Includes structural design, graphics application, material considerations, and sustainability factors for retail success.",
-      image: "https://images.unsplash.com/photo-1626253934161-08cfea22e968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwcGFja2FnaW5nJTIwZGVzaWdufGVufDF8fHx8MTc1ODk2Njg1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Packaging Design", "Product Graphics", "Retail Design", "Brand Application"],
-      client: "Consumer Goods Co.",
+      description: "Branded tote bag with HR.DESIGN logo.",
+      detailedDescription:
+        "Clean mockup of a brown tote bag featuring the HR.DESIGN mark in black for a strong, simple look.",
+      image: hrDesignToteBag,
+      // if you prefer, rename the import to hrDesignToteBag at the top
+      tags: ["Packaging", "Tote Bag", "Merch"],
+      client: "HR.DESIGN",
       year: "2024",
       link: "#",
-      aspectRatio: "portrait"
-    }
+      aspectRatio: "square",
+    },
   ];
 
   // Filter projects by category

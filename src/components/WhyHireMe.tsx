@@ -111,7 +111,7 @@ export function WhyHireMe() {
             </div>
 
             {/* Additional highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6">
               <Card className="p-4 bg-teal-50 dark:bg-teal-950 border-teal-200 dark:border-teal-800">
                 <div className="space-y-2">
                   <div className="text-teal-600 dark:text-teal-400 font-medium">
@@ -133,7 +133,7 @@ export function WhyHireMe() {
                   </p>
                 </div>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
