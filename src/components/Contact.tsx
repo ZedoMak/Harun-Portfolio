@@ -11,7 +11,6 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Github,
   MessageCircle,
   Send,
   CheckCircle,
