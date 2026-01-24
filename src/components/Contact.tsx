@@ -8,9 +8,9 @@ import {
   Mail,
   Phone,
   MapPin,
-  Twitter,
-  Instagram,
-  Linkedin,
+  // Twitter,
+  // Instagram,
+  // Linkedin,
   MessageCircle,
   Send,
   CheckCircle,
@@ -86,29 +86,23 @@ export function Contact() {
   ];
 
   const socialLinks = [
-    {
-      icon: <Twitter className="w-5 h-5" />,
-      label: "X / Twitter",
-      href: "https://twitter.com/your_username",
-      color: "hover:text-blue-400",
-    },
-    {
-      icon: <Instagram className="w-5 h-5" />,
-      label: "Instagram",
-      href: "https://instagram.com/your_username",
-      color: "hover:text-pink-400",
-    },
-    {
-      icon: <Linkedin className="w-5 h-5" />,
-      label: "LinkedIn",
-      href: "https://linkedin.com/in/your_username",
-      color: "hover:text-blue-600",
-    },
     // {
-    //   icon: <Github className="w-5 h-5" />,
-    //   label: "GitHub",
-    //   href: "https://github.com",
-    //   color: "hover:text-gray-600 dark:hover:text-gray-400",
+    //   icon: <Twitter className="w-5 h-5" />,
+    //   label: "X / Twitter",
+    //   href: "https://twitter.com/your_username",
+    //   color: "hover:text-blue-400",
+    // },
+    // {
+    //   icon: <Instagram className="w-5 h-5" />,
+    //   label: "Instagram",
+    //   href: "https://instagram.com/your_username",
+    //   color: "hover:text-pink-400",
+    // },
+    // {
+    //   icon: <Linkedin className="w-5 h-5" />,
+    //   label: "LinkedIn",
+    //   href: "https://linkedin.com/in/your_username",
+    //   color: "hover:text-blue-600",
     // },
     {
       icon: <MessageCircle className="w-5 h-5" />,
