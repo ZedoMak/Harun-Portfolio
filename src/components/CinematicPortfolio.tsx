@@ -21,7 +21,7 @@ import manduCollectionPoster from '@/assets/images/mandu-collection-poster.jpg';
 import newShoesCollection from '@/assets/images/new-shoes-collection.jpg';
 import happyCoffee from '@/assets/images/happy-coffee.jpg';
 import abdiBrandPromotional from '@/assets/images/abdi-brand-promotional.jpg';
-//import pinncacle from '@/assets/images/pinnacle.jpg';
+import pinnacle from '@/assets/images/pinnacle.jpg';
 import baleArsi from '@/assets/images/bale-arsi.jpg';
 
 import abdiBrandLogo from '@/assets/images/abdi-brand-fashion-logo.jpg';
@@ -352,8 +352,8 @@ export function CinematicPortfolio() {
       description: "American English School.",
       detailedDescription:
         "Circular logo ",
-      image: baleArsi,
-      tags: ["Logo", "Agriculture"],
+      image: pinnacle,
+      tags: ["Logo", "School"],
       client: "Pinnacle School Of America",
       year: "2024",
       link: "#",
