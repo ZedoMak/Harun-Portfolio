@@ -21,6 +21,8 @@ import manduCollectionPoster from '@/assets/images/mandu-collection-poster.jpg';
 import newShoesCollection from '@/assets/images/new-shoes-collection.jpg';
 import happyCoffee from '@/assets/images/happy-coffee.jpg';
 import abdiBrandPromotional from '@/assets/images/abdi-brand-promotional.jpg';
+import pinncacle from '@/assets/images/pinnacle.jpg';
+import baleArsi from '@/assets/images/bale-arsi.jpg';
 
 import abdiBrandLogo from '@/assets/images/abdi-brand-fashion-logo.jpg';
 import abdiAdvertLogo from '@/assets/images/abdi-advert-logo.jpg';
@@ -320,7 +322,7 @@ export function CinematicPortfolio() {
       description: "Agricultural company logo with plant and gear motif.",
       detailedDescription:
         "Circular logo merging crop fields, leaves and gear teeth to communicate both farming and technology.",
-      image: baleArsiLogo,
+      image: baleArsi,
       tags: ["Logo", "Agriculture"],
       client: "BALE & ARSI Agri Inputs Supplier",
       year: "2024",
@@ -342,10 +344,25 @@ export function CinematicPortfolio() {
       link: "#",
       aspectRatio: "square",
     },
+    {
+      id: 20,
+      title: "Pinnacle American English Academy",
+      category: "Branding",
+      type: "branding",
+      description: "American English School.",
+      detailedDescription:
+        "Circular logo ",
+      image: baleArsi,
+      tags: ["Logo", "Agriculture"],
+      client: "Pinnacle School Of America",
+      year: "2024",
+      link: "#",
+      aspectRatio: "square",
+    },
 
     // Packaging & Product Graphics
     {
-      id: 20,
+      id: 21,
       title: "ABDI BRAND Shopping Bag",
       category: "Packaging",
       type: "packaging",
@@ -360,7 +377,7 @@ export function CinematicPortfolio() {
       aspectRatio: "portrait",
     },
     {
-      id: 21,
+      id: 22,
       title: "HR.DESIGN Tote Bag",
       category: "Packaging",
       type: "packaging",
