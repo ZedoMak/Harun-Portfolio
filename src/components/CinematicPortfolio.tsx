@@ -21,13 +21,13 @@ import manduCollectionPoster from '@/assets/images/mandu-collection-poster.jpg';
 import newShoesCollection from '@/assets/images/new-shoes-collection.jpg';
 import happyCoffee from '@/assets/images/happy-coffee.jpg';
 import abdiBrandPromotional from '@/assets/images/abdi-brand-promotional.jpg';
-import pinncacle from '@/assets/images/pinnacle.jpg';
+//import pinncacle from '@/assets/images/pinnacle.jpg';
 import baleArsi from '@/assets/images/bale-arsi.jpg';
 
 import abdiBrandLogo from '@/assets/images/abdi-brand-fashion-logo.jpg';
 import abdiAdvertLogo from '@/assets/images/abdi-advert-logo.jpg';
 import hrDesignLogo from '@/assets/images/hr-design-logo.jpg';
-import baleArsiLogo from '@/assets/images/ale-arsi-agri-logo.jpg';
+//import baleArsiLogo from '@/assets/images/ale-arsi-agri-logo.jpg';
 import summerCoffeeLogo from '@/assets/images/summer-coffee-logo.jpg';
 import hrDesignToteBag from '@/assets/images/hr-design-tote-bag.jpg';
 
