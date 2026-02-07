@@ -1,5 +1,5 @@
 import { 
-  Shirt, 
+  Palette, 
   Coffee, 
   Megaphone, 
   Gift,
@@ -79,7 +79,7 @@ export function SkillsShowcase() {
     { icon: <FigmaLogo />, name: "Figma" },
     { icon: <CanvaLogo />, name: "Canva" },
     { icon: <CorelDrawLogo />, name: "CorelDRAW" },
-    { icon: <Shirt className="w-6 h-6" />, name: "Apparel Design" },
+    { icon: <Palette className="w-6 h-6" />, name: "Graphic Design" },
     { icon: <Coffee className="w-6 h-6" />, name: "Product Design" },
     { icon: <Megaphone className="w-6 h-6" />, name: "Marketing Design" },
     { icon: <Gift className="w-6 h-6" />, name: "Event Graphics" },

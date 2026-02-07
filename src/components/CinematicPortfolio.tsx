@@ -49,11 +49,11 @@ export function CinematicPortfolio() {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   const projects: Project[] = [
-    // Clothing Graphics Section
+    // Graphics Section
     {
       id: 1,
       title: "INFO-TECH T-Shirt Design",
-      category: "Clothing Graphics",
+      category: "Graphics",
       type: "clothing",
       description: "Professional t-shirt design for a computer training institution.",
       detailedDescription:
@@ -68,7 +68,7 @@ export function CinematicPortfolio() {
     {
       id: 2,
       title: "ABDI BRAND Fashion Collection",
-      category: "Clothing Graphics",
+      category: "Graphics",
       type: "clothing",
       description: "Fashion collection banner showing shoes, clothes and accessories.",
       detailedDescription:
@@ -83,7 +83,7 @@ export function CinematicPortfolio() {
     {
       id: 3,
       title: "Sports Jersey Design",
-      category: "Clothing Graphics",
+      category: "Graphics",
       type: "clothing",
       description: "Professional sports jersey design with team branding.",
       detailedDescription:
@@ -378,7 +378,7 @@ export function CinematicPortfolio() {
   ];
 
   // Filter projects by category
-  const clothingProjects = projects.filter(p => p.category === "Clothing Graphics");
+  const clothingProjects = projects.filter(p => p.category === "Graphics");
   const menuProjects = projects.filter(p => p.category === "Menu Design");
   const advertisementProjects = projects.filter(p => p.category === "Advertisement");
   const brandingProjects = projects.filter(p => p.category === "Branding");
@@ -420,7 +420,7 @@ export function CinematicPortfolio() {
             <h2 className="text-4xl md:text-6xl mb-6">Graphics Design Portfolio</h2>
             <div className="w-24 h-1 bg-teal-500 mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Explore my comprehensive graphics design portfolio featuring clothing graphics, menu designs, 
+              Explore my comprehensive graphics design portfolio featuring graphics, menu designs, 
               advertisement materials, branding solutions, and innovative packaging designs. Every project 
               crafted with creativity, precision, and market appeal.
             </p>
@@ -428,10 +428,10 @@ export function CinematicPortfolio() {
         </div>
       </div>
 
-      {/* Clothing Graphics Portfolio - Infinite Horizontal Scroll Left */}
+      {/* Graphics Portfolio - Infinite Horizontal Scroll Left */}
       <InfiniteScrollGallery
-        title="Clothing Graphics"
-        subtitle="Custom apparel designs for t-shirts, hoodies, jerseys, and fashion brands that make a statement."
+        title="Graphics"
+        subtitle="Creative graphics projects for brands, campaigns, and products that make a statement."
         items={clothingProjects}
         direction="left"
         speed="medium"
