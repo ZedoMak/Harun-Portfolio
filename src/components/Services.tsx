@@ -2,7 +2,6 @@ import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { 
   Palette, 
-  Shirt, 
   Coffee, 
   FileText, 
   Megaphone, 
@@ -13,7 +12,7 @@ import { FadeInUp } from "./animations/ScrollAnimations";
 import { useStaggeredAnimation } from "./hooks/useScrollAnimation";
 
 export function Services() {
-  const { containerRef, visibleItems } = useStaggeredAnimation(6, { 
+  const { containerRef, visibleItems } = useStaggeredAnimation(5, { 
     staggerDelay: 150,
     threshold: 0.1 
   });
@@ -29,14 +28,6 @@ export function Services() {
   };
 
   const services = [
-    {
-      icon: <Shirt className="w-8 h-8" />,
-      title: "Custom Apparel Design",
-      description: "Professional designs for t-shirts, hoodies, clothing and fashion items. From concept to print-ready artwork, creating unique designs that stand out and represent your brand perfectly.",
-      features: ["T-Shirt Designs", "Hoodie Graphics", "Fashion Prints", "Clothing Branding"],
-      popular: true,
-      category: "apparel"
-    },
     {
       icon: <Coffee className="w-8 h-8" />,
       title: "Product Design & Mugs",
@@ -87,7 +78,7 @@ export function Services() {
           <div className="w-20 h-1 bg-teal-500 mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Bringing your vision to life through creative graphic design solutions. 
-            From custom apparel and promotional products to marketing materials and branding, I deliver designs that make an impact.
+            From promotional products to marketing materials and branding, I deliver designs that make an impact.
           </p>
         </FadeInUp>
 

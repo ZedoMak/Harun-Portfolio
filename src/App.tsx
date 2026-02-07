@@ -5,7 +5,6 @@ import { About } from "./components/About";
 import { WhyHireMe } from "./components/WhyHireMe";
 import { CinematicPortfolio } from "./components/CinematicPortfolio";
 import { Services } from "./components/Services";
-import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { ParticleField } from "./components/animations/FloatingElements";
@@ -22,7 +21,6 @@ export default function App() {
           <WhyHireMe />
           <CinematicPortfolio />
           <Services />
-          <Testimonials />
           <Contact />
         </main>
         <Footer />
