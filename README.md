@@ -44,4 +44,4 @@ A personal portfolio website for Harun Ahmed, a professional Graphics Designer s
 
 ---
 
-© 2025 Harun Ahmed. All rights reserved.
+© 2026 Harun Ahmed. All rights reserved.
