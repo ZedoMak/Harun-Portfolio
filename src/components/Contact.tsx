@@ -111,7 +111,7 @@ export function Contact() {
       color: "hover:text-blue-600 dark:hover:text-gray-400",
     },
     {
-      icon: <FaInstagram className="w-5 h-5" />,
+      icon: <FaInstagram className="w-5 h-5 hover:background-red/400" />,
       label: "Instagram",
       href: "https://www.instagram.com/hr289118",
       color: "hover:text-purple-400",
