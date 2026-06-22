@@ -5,6 +5,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { toast } from "sonner";
+import emailjs from '@emailjs/browser'
 import {
   FaTiktok,
   FaTelegram,
@@ -16,8 +17,13 @@ import {
   Phone,
   MapPin,
   Send,
-  CheckCircle
+  CheckCircle,
+  Loader2
 } from 'lucide-react'
+
+//email js
+
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -26,33 +32,38 @@ export function Contact() {
     message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true)
+    try{
+          await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message
+          }
+        )
+        
+        
+        setIsSubmitted(true);
+        toast.success("Message sent. I'll get back to you!");
+        setFormData({ name: "", email: "", message: "" });
 
-    const to = "zerihunmekonen55@gmail.com";
-    const subject = `New project inquiry from ${formData.name}`;
-    const body = [
-      `Name: ${formData.name}`,
-      `Email: ${formData.email}`,
-      "",
-      "Message:",
-      formData.message,
-    ].join("\n");
+        // Reset success state after 3 seconds
+        setTimeout(() => setIsSubmitted(false), 3000);
 
-    const mailto = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
+      } catch(error){
 
-    window.location.href = mailto;
-
-    setIsSubmitted(true);
-    toast.success("Opening your email app. Thanks for reaching out!");
-    setFormData({ name: "", email: "", message: "" });
-
-    // Reset success state after 3 seconds
-    setTimeout(() => setIsSubmitted(false), 3000);
-  };
+          console.log(`Emialjs error: `, error)
+          toast.error(`Something went wrong. Please try again!`)
+      } finally{
+        setIsLoading(false)
+      }
+    }
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -96,7 +107,7 @@ export function Contact() {
     {
       icon: <FaTelegram className="w-5 h-5" />,
       label: "Telegram",
-      href: "https://t.me/Noveltei",
+      href: "https://t.me/Hr_well12",
       color: "hover:text-blue-600 dark:hover:text-gray-400",
     },
     {
@@ -186,19 +197,25 @@ export function Contact() {
                       ? "bg-green-500 hover:bg-green-600"
                       : "bg-teal-500 hover:bg-teal-600"
                   } text-white transform hover:scale-105 shadow-lg hover:shadow-xl`}
-                  disabled={isSubmitted}
+                  disabled={isSubmitted  || isLoading}
                 >
-                  {isSubmitted ? (
+                  {isLoading? (
+                    <>
+                      <Loader2 className="w-5 h-5 mr-2 animate-spin"  />
+                      Sending...
+                    </>
+                  ) : isSubmitted ? (
                     <>
                       <CheckCircle className="w-5 h-5 mr-2" />
-                      Message Sent!
+                      Message sent!
                     </>
                   ) : (
                     <>
-                      <Send className="w-5 h-5 mr-2" />
+                      <Send className="w-5 h-5 mr-2"/>
                       Send Message
                     </>
-                  )}
+                  )
+                }
                 </Button>
               </form>
             </CardContent>
