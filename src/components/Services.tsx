@@ -151,7 +151,7 @@ export function Services() {
 
                 {/* CTA */}
                 <div className="pt-6 border-t border-border/50 mt-6">
-                  <button className="flex items-center gap-2 font-medium text-teal-500 hover:text-teal-600 transition-colors duration-300 group/btn">
+                  <button onClick={()=> document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})} className="flex items-center gap-2 font-medium text-teal-500 hover:text-teal-600 transition-colors duration-300 group/btn">
                     Get Started
                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                   </button>
