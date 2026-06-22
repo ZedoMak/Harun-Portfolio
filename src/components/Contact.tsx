@@ -4,19 +4,20 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
+import { toast } from "sonner";
+import {
+  FaTiktok,
+  FaTelegram,
+  FaInstagram,
+  
+} from 'react-icons/fa'
 import {
   Mail,
   Phone,
   MapPin,
-  // Twitter,
-  // Instagram,
-  // Linkedin,
-  MessageCircle,
   Send,
-  CheckCircle,
-  Music2,
-} from "lucide-react";
-import { toast } from "sonner";
+  CheckCircle
+} from 'lucide-react'
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const to = "harun@gmail.com";
+    const to = "zerihunmekonen55@gmail.com";
     const subject = `New project inquiry from ${formData.name}`;
     const body = [
       `Name: ${formData.name}`,
@@ -68,8 +69,8 @@ export function Contact() {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "harun@gmail.com",
-      href: "mailto:harun@gmail.com",
+      value: "Harunahmed594@gmail.com",
+      href: "mailto:Harunahmed594@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,
@@ -86,34 +87,22 @@ export function Contact() {
   ];
 
   const socialLinks = [
-    // {
-    //   icon: <Twitter className="w-5 h-5" />,
-    //   label: "X / Twitter",
-    //   href: "https://twitter.com/your_username",
-    //   color: "hover:text-blue-400",
-    // },
-    // {
-    //   icon: <Instagram className="w-5 h-5" />,
-    //   label: "Instagram",
-    //   href: "https://instagram.com/your_username",
-    //   color: "hover:text-pink-400",
-    // },
-    // {
-    //   icon: <Linkedin className="w-5 h-5" />,
-    //   label: "LinkedIn",
-    //   href: "https://linkedin.com/in/your_username",
-    //   color: "hover:text-blue-600",
-    // },
+    
     {
-      icon: <MessageCircle className="w-5 h-5" />,
+      icon: <FaTiktok className="w-5 h-5"/>,
+      label: "TikTok",
+      href: "https://www.tiktok.com/@harun28481"
+    },
+    {
+      icon: <FaTelegram className="w-5 h-5" />,
       label: "Telegram",
       href: "https://t.me/Noveltei",
       color: "hover:text-blue-600 dark:hover:text-gray-400",
     },
     {
-      icon: <Music2 className="w-5 h-5" />,
-      label: "TikTok",
-      href: "https://www.tiktok.com/@your_username",
+      icon: <FaInstagram className="w-5 h-5" />,
+      label: "Instagram",
+      href: "https://www.instagram.com/hr289118",
       color: "hover:text-purple-400",
     },
   ];
